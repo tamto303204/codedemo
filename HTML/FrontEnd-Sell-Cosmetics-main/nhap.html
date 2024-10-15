@@ -1,0 +1,449 @@
+<div>
+    <div class="header__cart have" href="#">
+        <i class="fas fa-shopping-basket"></i>
+        <div class="header__cart-amount">
+            3
+        </div>
+        <div class="header__cart-wrap">
+            <ul class="order__list">
+                <li class="item-order">
+                    <div class="order-wrap">
+                        <a href="product.html" class="order-img">
+                            <img src="./assets/img/product/product1.jpg" alt="">
+                        </a>
+                        <div class="order-main">
+                            <a href="product.html" class="order-main-name">Áo sơ mi  caro kèm belt caro kèm belt Áo sơ mi caro kèm belt</a>
+                            <div class="order-main-price">2 x 45,000 ₫</div>
+                        </div>
+                        <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                    </div>
+                </li>
+                <li class="item-order">
+                    <div class="order-wrap">
+                        <a href="product.html" class="order-img">
+                            <img src="./assets/img/product/product1.jpg" alt="">
+                        </a>
+                        <div class="order-main">
+                            <a href="product.html" class="order-main-name">Áo sơ mi  caro kèm belt caro kèm belt Áo sơ mi caro kèm belt</a>
+                            <div class="order-main-price">2 x 45,000 ₫</div>
+                        </div>
+                        <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                    </div>
+                </li>
+                <li class="item-order">
+                    <div class="order-wrap">
+                        <a href="product.html" class="order-img">
+                            <img src="./assets/img/product/product1.jpg" alt="">
+                        </a>
+                        <div class="order-main">
+                            <a href="product.html" class="order-main-name">Áo sơ mi  caro kèm belt caro kèm belt Áo sơ mi caro kèm belt</a>
+                            <div class="order-main-price">2 x 45,000 ₫</div>
+                        </div>
+                        <a href="product.html" class="order-close"><i class="far fa-times-circle"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="total-money">Tổng cộng: 120.000đ</div>
+            <a href="cart.html" class="btn btn--default cart-btn">Xem giỏ hàng</a>
+            <a href="pay.html" class="btn btn--default cart-btn orange">Thanh toán</a>
+            <!-- norcart -->
+            <!-- <img class="header__cart-img-nocart" src="http://www.giaybinhduong.com/images/empty-cart.png" alt=""> -->
+        </div>
+    </div>
+</div>
+    <style>
+        
+        /* === Css base */
+:root {
+    --default-cl: #9e5bab;
+    --black-cl-1: #444444;
+    --black-cl-2: #222222;
+    --white-cl-1: #fff;
+    --white-cl-2: rgba(255, 255, 255, 0.7);
+    --white-cl-3: #f8f7fd;
+    --orange-cl: #d26e4b;
+    --hight-header-top: 80px;
+    --hight-header-nav: 50px;
+    --hight-header: calc(var(--hight-header-nav) + var(--hight-header-top))
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 62.5%;
+}
+
+
+/*input*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: none;
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    min-width: 95px;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.btn.btn--default {
+    background-color: var(--default-cl);
+    padding: 14px 30px;
+    color: var(--white-cl-1);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.btn.cart-btn {
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+.btn.orange {
+    background-color: var(--orange-cl)
+}
+
+
+/*---Breadcrumb---  */
+
+.main__breadcrumb {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb__item {
+    position: relative;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.breadcrumb__link {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-right: 12px;
+    color: var(--black-cl-1);
+}
+
+.breadcrumb__item::after {
+    content: "/";
+    font-size: 2rem;
+    position: absolute;
+    font-weight: 500;
+    right: -4px;
+    top: -2px;
+}
+
+.main__breadcrumb .breadcrumb__item:last-child::after {
+    display: none;
+}
+
+.main__breadcrumb .breadcrumb__item:last-child .breadcrumb__link {
+    font-weight: 500;
+    color: var(--black-cl-2);
+}
+
+
+
+
+/* ====List KeyFrames==== */
+
+@keyframes fadeInTop {
+    from {
+        top: 48%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes ScaleTopRight {
+    from {
+        transform: scale(0);
+        opacity: 2;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        top: calc(100% + 16px);
+        opacity: 0;
+    }
+    to {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes textTranform {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+
+/* =========Header========= */
+
+.header {
+    height: var(--hight-header);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    background-color: var(--white-cl-1);
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--hight-header-top);
+}
+
+
+/* ------Account------ */
+
+
+
+
+/* ----Cart---- */
+
+.header__cart {
+    position: relative;
+    cursor: pointer;
+    padding: 12px;
+}
+
+
+.header__cart:after {
+    content: "";
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.header__cart:hover i,
+.header__search:hover i {
+    color: var(--default-cl);
+    transition: all 0.3s;
+}
+
+.header .header__cart i {
+    font-size: 2.6rem;
+    color: var(--black-cl-2);
+}
+
+.header__cart-amount {
+    position: absolute;
+    border-radius: 50%;
+    padding: 4px 7px;
+    background-color: var(--default-cl);
+    color: var(--white-cl-1);
+    font-size: 1.2rem;
+    font-weight: 500;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ----Cart list---- */
+
+.header__cart-wrap {
+    position: absolute;
+    top: 100%;
+    right: 4px;
+    width: 280px;
+    background-color: rgb(245, 237, 238);
+    padding: 12px;
+    z-index: 2;
+    box-shadow: 0 0 5px var(--bd-cl-2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    transform-origin: top right;
+    will-change: transform, opacity;
+    animation: ScaleTopRight ease-in 0.35s;
+    display: none;
+}
+
+.header__cart.have:hover .header__cart-wrap {
+    display: block;
+}
+
+.header__cart-wrap:before {
+    border: solid;
+    border-color: rgb(245, 237, 238) transparent;
+    border-width: 0 10px 10px 10px;
+    top: -10px;
+    content: "";
+    right: 4%;
+    position: absolute;
+    z-index: 99;
+}
+
+.list-order {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.item-order {
+    margin-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+
+.order-wrap {
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.order-img img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.order-main {
+    margin-right: auto;
+    flex: 1;
+}
+
+.order-main-name {
+    color: var(--black-cl-1);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    max-height: 18px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-align: left;
+}
+
+.order-main-name:hover {
+    color: var(--orange-cl);
+}
+
+.order-main-price {
+    color: var(--black-cl-2);
+    font-size: 1.4rem;
+    padding: 8px 0;
+    font-weight: 600;
+}
+
+.header .order-close i {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--black-cl-1);
+    margin-left: 12px;
+}
+
+.order-close:hover i {
+    color: var(--orange-cl);
+}
+
+.total-money {
+    font-size: 1.6rem;
+    color: var(--black-cl-2);
+    text-align: center;
+    font-weight: 600;
+    padding: 12px 0;
+    cursor: default;
+}
+
+.header__cart-wrap .btn {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+    </style>
+  
+</div>

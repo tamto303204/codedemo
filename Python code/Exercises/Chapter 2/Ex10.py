@@ -1,0 +1,2 @@
+def TinhA(n):
+    return
